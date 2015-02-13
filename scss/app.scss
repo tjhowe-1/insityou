@@ -1,5 +1,7 @@
+
 @import "settings";
 @import "foundation";
+
 
 // Or selectively include components
 // @import
@@ -38,3 +40,533 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+// CUSTOM STYLES
+
+// Landing image
+
+#mission {
+	background: url(img/head.jpg) center center/cover no-repeat fixed;
+	padding: 15% 20% 10% 20%;
+  height: 100%;
+	h1, h2, h3 {
+		text-align: center;
+		// border-bottom: dotted 1px #fff;
+		color: $white;
+		// font-weight: bold;
+	}
+}
+#mission-2 {
+	background: url(img/mid.jpg) center/cover no-repeat fixed;
+	padding: 10% 20% 10% 20%;
+
+	h1, h2, h3 {
+		text-align: center;
+		// border-bottom: dotted 1px #fff;
+		color: $white;
+		// font-weight: bold;
+	}
+}
+#mission-3 {
+	background: url(img/foot.jpg) center/cover no-repeat fixed;
+	padding: 10% 20% 10% 20%;
+
+	h1, h2, h3 {
+		text-align: center;
+		// border-bottom: dotted 1px #fff;
+		color: $white;
+		// font-weight: bold;
+	}
+}
+
+.pricing-table {
+  img {
+    width: 42%; padding: 3%;
+  }
+}
+h1, h2, h3, h4 {
+	text-align: center;
+}
+
+.padding-bottom {
+  padding-bottom: 2%;
+}
+
+.padding-top {
+  padding-top: 2%;
+}
+
+.team {
+	h3 {
+		text-align: left;
+	}
+}
+
+.error-1 {
+   display: block;
+  padding: 0.375rem 0.5625rem 0.5625rem;
+  margin-top: -1px;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+  background: #f04124;
+  color: #FFFFFF;
+}
+
+.info-table {
+  // border: solid 1px #2A044A;
+  margin-left: 0;
+  margin-bottom: 1.25rem;
+}
+/* line 68, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
+.info-table * {
+  list-style: none;
+  line-height: 1;
+}
+/* line 142, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
+.info-table .title {
+  // background-color: #2A044A;
+  padding: 0.9375rem 1.25rem;
+  text-align: center;
+  color: #a0c55f;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: "Akkurat Pro", Helvetica, Roboto, Arial, sans-serif;
+}
+/* line 143, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
+.info-table .price {
+  background-color: #F6F6F6;
+  padding: 0.9375rem 1.25rem;
+  text-align: center;
+  color: #333333;
+  font-weight: normal;
+  font-size: 2rem;
+  font-family: "Akkurat Pro", Helvetica, Roboto, Arial, sans-serif;
+}
+/* line 144, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
+.info-table .description {
+  background-color: #FFFFFF;
+  padding: 0.9375rem;
+  text-align: center;
+  color: #777777;
+  font-size: 0.75rem;
+  font-weight: normal;
+  line-height: 1.4;
+  // border-bottom: dotted 1px #DDDDDD;
+}
+/* line 145, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
+.info-table .bullet-item {
+  background-color: #FFFFFF;
+  padding: 0.9375rem;
+  text-align: center;
+  color: #333333;
+  font-size: 0.875rem;
+  font-weight: normal;
+  border-bottom: dotted 1px #DDDDDD;
+}
+/* line 146, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
+.info-table .cta-button {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 1.25rem 1.25rem 0;
+}
+
+.cookie {
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+
+.links{
+	padding-left: 0% !important;
+}
+
+footer {
+	color: #2A044A;
+  background-color: #e5e5e5; 
+}
+
+.footer-link-1 {
+  padding-top: 2%; 
+  padding-bottom: 0%;
+}
+
+.footer-link-2 {
+  padding-top: 1%; 
+  padding-bottom: 2%;
+  
+}
+
+.link-layer-1 {
+  border-bottom: 1px solid #2A044A;
+}
+
+input[type="text"] {
+  text-align: center;
+}
+
+.button {
+  width: 100%;
+}
+
+.person {
+  p {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
+.founders {
+  span {
+    font-size: 0.7rem;
+    padding: 0% 2% 0% 2%;
+  }
+
+}
+
+.team-pad {
+  padding: 0% 15% 2%% 15%;
+}
+
+.green-text {
+  color: #a0c55f;
+}
+
+.top-bar-js-breakpoint {
+  width: 0em !important;
+  visibility: hidden; }
+
+.js-generated {
+  display: block; }
+
+
+@media #{$small-only} { 
+
+  #mission {
+    padding: 10% 10% 10% 10%;
+    height: auto;
+  }
+  #mission-2 {
+    padding: 10% 10% 10% 10%;
+  }
+  #mission-3 {
+    padding: 10% 10% 10% 10%;
+  }
+
+  footer {
+    p {
+      font-size: 1rem;
+      margin-bottom: 0rem;
+    }
+    a {
+      margin-bottom: 1.25rem;
+    }
+
+    .links {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .founders {
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .team-pad {
+    padding: 0% 10% 2%% 10%;
+  }
+  .info-table .title {
+    padding: 0.9375rem 0.25rem
+  }
+  .info-table .description {
+    padding: 0;
+  }
+
+  .links{
+    padding-left: 1% !important;
+  }
+  // Mobile menu override
+   /* line 457, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar {
+    background: #2A044A;
+    overflow: visible;
+  }
+  /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .top-bar:before, .top-bar:after {
+    content: " ";
+    display: table;
+  }
+  /* line 173, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .top-bar:after {
+    clear: both;
+  }
+  /* line 462, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar .toggle-topbar {
+    display: none;
+  }
+  /* line 464, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar .title-area {
+    float: left;
+  }
+  /* line 465, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar .name h1 a,
+  .top-bar .name h2 a,
+  .top-bar .name h3 a,
+  .top-bar .name h4 a,
+  .top-bar .name h5 a,
+  .top-bar .name h6 a {
+    width: auto;
+  }
+  /* line 472, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar input,
+  .top-bar .button,
+  .top-bar button {
+    font-size: 0.675rem;
+    position: relative;
+    height: 1.75rem;
+    top: 1.15625rem;
+  }
+  /* line 481, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar.expanded {
+    background: #2A044A;
+  }
+
+  /* line 484, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .contain-to-grid .top-bar {
+    max-width: 71.875rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+
+  /* line 490, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section {
+    transition: none 0 0;
+    left: 0 !important;
+  }
+  /* line 494, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section ul {
+    width: auto;
+    height: auto !important;
+    display: inline;
+  }
+  /* line 499, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section ul li {
+    float: left;
+  }
+  /* line 501, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section ul li .js-generated {
+    display: none;
+  }
+  /* line 507, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section li.hover > a:not(.button) {
+    background-color: #555555;
+    background: #333333;
+    color: #FFFFFF;
+  }
+  /* line 516, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 1.35417rem;
+    line-height: 4.0625rem;
+    background: #2A044A;
+  }
+  /* line 520, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: #555555;
+    background: #333333;
+  }
+  /* line 529, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 1.35417rem;
+    line-height: 4.0625rem;
+    color: #FFFFFF;
+    background: #2A044A;
+  }
+  /* line 534, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: #240340;
+    color: #FFFFFF;
+  }
+  /* line 544, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-dropdown > a {
+    padding-right: 2.60417rem !important;
+  }
+  /* line 546, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-dropdown > a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+    border-top-style: solid;
+    margin-top: -2.5px;
+    top: 2.03125rem;
+  }
+  /* line 554, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-dropdown.moved {
+    position: relative;
+  }
+  /* line 555, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-dropdown.moved > .dropdown {
+    display: block;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  /* line 561, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important;
+  }
+  /* line 565, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-dropdown > a:focus + .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important;
+  }
+  /* line 572, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+    border: none;
+    content: "\00bb";
+    top: 1rem;
+    margin-top: -1px;
+    right: 5px;
+    line-height: 1.2;
+  }
+  /* line 585, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .dropdown {
+    left: 0;
+    top: auto;
+    background: transparent;
+    min-width: 100%;
+  }
+  /* line 592, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .dropdown li a {
+    color: #FFFFFF;
+    line-height: 4.0625rem;
+    white-space: nowrap;
+    padding: 12px 1.35417rem;
+    background: #333333;
+  }
+  /* line 601, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    color: #FFFFFF;
+    background: #333333;
+  }
+  /* line 606, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+    color: #FFFFFF;
+    background-color: #555555;
+    background: #333333;
+  }
+  /* line 615, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .dropdown li label {
+    white-space: nowrap;
+    background: #333333;
+  }
+  /* line 621, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .dropdown li .dropdown {
+    left: 100%;
+    top: 0;
+  }
+  /* line 628, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    border-bottom: none;
+    border-top: none;
+    border-right: solid 1px #48077f;
+    clear: none;
+    height: 4.0625rem;
+    width: 0;
+  }
+  /* line 638, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .has-form {
+    background: #2A044A;
+    padding: 0 1.35417rem;
+    height: 4.0625rem;
+  }
+  /* line 646, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .right li .dropdown {
+    left: auto;
+    right: 0;
+  }
+  /* line 650, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .right li .dropdown li .dropdown {
+    right: 100%;
+  }
+  /* line 654, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .left li .dropdown {
+    right: auto;
+    left: 0;
+  }
+  /* line 658, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .top-bar-section .left li .dropdown li .dropdown {
+    left: 100%;
+  }
+
+  /* line 668, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .no-js .top-bar-section ul li:hover > a {
+    background-color: #555555;
+    background: #333333;
+    color: #FFFFFF;
+  }
+  /* line 677, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .no-js .top-bar-section ul li:active > a {
+    background: #2A044A;
+    color: #FFFFFF;
+  }
+  /* line 685, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .no-js .top-bar-section .has-dropdown:hover > .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important;
+  }
+  /* line 689, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
+  .no-js .top-bar-section .has-dropdown > a:focus + .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important;
+  }
+  .top-bar-section ul li > a {
+    font-size: 0.6125rem;
+  }
+
+}
+
+@media #{$medium-only} { 
+
+  #mission {
+    padding: 10% 7.5% 10% 7.5%;
+    height: auto;
+  }
+  #mission-2 {
+    padding: 10% 10% 10% 10%;
+  }
+  #mission-3 {
+    padding: 10% 10% 10% 10%;
+  }
+
+}

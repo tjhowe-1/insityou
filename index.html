@@ -3,161 +3,303 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <meta name="description" content="InSitYou is a B2B software solution which turns the complexity of managing today's dynamic workforce and workplace into a source of efficiency, creativity and profitablity.">
+    <title>Insityou</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+      <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+      <link rel="stylesheet" href="stylesheets/ie.css" />
+    <![endif]-->
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+    <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+        <div class="small-4 medium-2 columns left">
+          <img src="img/logo.png">
         </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
+        <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="mailto:info@insityou.uk">Request a Demo</a></li>
+          <li><a href="#"><a href="#" data-reveal-id="myModal">Sign In</a></a></li>
+            <div id="myModal" class="reveal-modal" data-reveal>
+              <h2>Sign In</h2>
+              <div class="small-10 small-offset-1 columns">
+                <form data-abide id="myform">
+                  <div class="input-wrapper">
+                  <label>Email Address <small>required</small>
+                    <input type="email" required>
+                  </label>
+                  <small class="error">A valid email address is required.</small>
                 </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
+                <div class="password-field">
+                  <label>Password <small>required</small>
+                    <input type="password" id="password" required pattern="[a-zA-Z]+">
+                  </label>
+                  <small class="error">Your password must match the requirements</small>
                 </div>
+                <div class="button" href="">Sign In</div>
+                  <small class="error">Your password must match the requirements</small>
+                </form>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+              <a class="close-reveal-modal">&#215;</a>
+            </div> 
+          </ul>
+        </section>
+      </nav>
+    </div>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+    <div id="mission" class="intro-container">
+      <h1>Our vision is to redefine the value of both real estate and human capital by linking the real-time organisation of people in physical space to the dynamic models which drive business.</h1>
+    </div>
+
+    <div class="row scrollme">
+      <div class="animateme show-for-medium-up" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatey="400" style="opacity: 0.99; transform: translate3d(3px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);" >
+        <div class="small-12 columns animateme">
+        <video loop autoplay="autoplay" align="right" style="width: 20%; margin 0 auto; margin-left:40%;">
+          <source src="nodes-2.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="show-for-medium-up small-12 columns animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+        <h2>InSitYou is a B2B software solution, which turns the complexity of managing today’s dynamic workforce and workplace into a source of efficiency, creativity and profitability.</h2>
+        </div>
+      </div>
+      <div class="small-12 hide-for-medium-up columns padding-top">
+        <h2>InSitYou is a B2B software solution, which turns the complexity of managing today’s dynamic workforce and workplace into a source of efficiency, creativity and profitability.</h2>
+      </div>
+    </div>
+
+    <div class="row scrollme" style="padding-top: 2%; padding-bottom: 2%;" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatey="400" style="opacity: 0.99; transform: translate3d(3px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+      <div class="large-3 small-12  columns">
+        <ul class="info-table">
+          <li class="title">Faster Relocations</li>
+          <li class="description">Re-organise your existing seating allocations or move your entire HQ in a fraction of the time.  Reduce the time spent debating who should move where with clear business focused spatial analytics. </li>
+       
+        </ul>
+      </div>
+      <div class="large-3 medium-12  columns">
+        <ul class="info-table">
+          <li class="title">Optimise Real Estate</li>
+          <li class="description">Reduce area contingencies and duplicate space take in activity based work environments.</li>
+
+        </ul>
+      </div>
+      <div class="large-3 medium-12  columns">
+        <ul class="info-table">
+          <li class="title">Enhance Team Performance</li>
+          <li class="description"> Get the right teams together to drive profits without relying on ancillary meeting areas and virtual project space.</li>
+
+        </ul>
+      </div>
+      <div class="large-3 medium-12  columns">
+        <ul class="info-table">
+          <li class="title">Foster Innovation</li>
+          <li class="description">Mix your departments and teams with strategic oversight, putting people in the right place to make great things happen.</li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div id="mission-2" class="intro-container scrollme">
+      <h1 class="animateme padding-bottom" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">￼InSitYou is the first software company to apply front office technology to support the real time co-location of a dynamic workforce based on business objectives and live data.</h1> 
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns padding-top">
+        <h2>Do you have a project based, results driven workforce and want to?</h2>
+        <div class="medium-4 small-12 columns">
+          <ul class="info-table">
+            <li class="description">Increase everyday desk utilisation and save money on unnecessary real estate.</li>         
+          </ul>
+        </div>
+        <div class="medium-4 small-12 columns">
+          <ul class="info-table">
+            <li class="description">Manage, retain and recruit dynamic workers.</li>
+          </ul>
+        </div>
+        <div class="medium-4 small-12 columns">
+          <ul class="info-table">
+            <li class="description">Contracted employees.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="small-12 columns padding-bottom">
+         <div class="medium-4 small-12 columns">
+          <ul class="info-table">
+            <li class="description">Generate chance encounter, cross-pollination of skills and create fertile ground for innovation.</li>
+          </ul>
+        </div>
+        <div class="medium-4 small-12 columns">
+          <ul class="info-table">
+            <li class="description">Develop scenario-based contingency strategies to best house your workforce.</li>      
+          </ul>
+        </div>
+        <div class="medium-4 small-12 columns">
+          <ul class="info-table">
+            <li class="description">Determine how much new office space to lease or how much to build?</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="padding-bottom green-text"> InSitYou will help you to achieve unprecedented results.</h3>
+    </div>
+
+    <div class="row scrollme">
+      <h2 class="padding-bottom">We offer three packages. <a href="mailto:info@insityou.uk">Contact us for a demo.</a></h2>
+      <div class="animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatey="400" style="opacity: 0.99; transform: translate3d(3px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+        <div class="medium-4 columns padding-bottom">
+          <ul class="pricing-table">
+            <li class="title"><img src="img/logo.png"> <br> lite</li>
+            <li class="description" style="padding: 1.2rem;">A real-time interactive workshop.</li>
+            <li class="bullet-item">Develop a spatial connectivity model from static audit data.</li>
+            <li class="bullet-item">Real time proximity testing.</li>
+            <li class="bullet-item">Zoning and seating allocation plans and metric reports</li>
+            <li class="bullet-item">Contact <a href="mailto:info@insityou.uk ">info@insityou.uk </a> for prices.</li>
+          </ul>
+        </div>
+        <div class="medium-4 columns">
+          <ul class="pricing-table">
+            <li class="title"><img src="img/logo.png"> <br> integrated consultancy</li>
+            <li class="description">Software solution to support an on-going <br> re-location or major overhaul of your existing workplace.</li>
+            <li class="bullet-item">Support your existing consultant team.</li>
+            <li class="bullet-item">Provide access to powerful web tools </li>
+            <li class="bullet-item">-</li>
+            <li class="bullet-item">Contact <a href="mailto:info@insityou.uk ">info@insityou.uk </a> for prices.</li>
+          </ul>
+        </div>
+
+        <div class="medium-4 columns">
+          <ul class="pricing-table">
+            <li class="title"><img src="img/logo.png"> <br>subscription</li>
+            <li class="description">An integrated solution to enable your team to manage a dynamic workforce and continuously optimise real estate.</li>
+            <li class="bullet-item">Vision workshop</li>
+            <li class="bullet-item">Integrations workshops</li>
+            <li class="bullet-item">Unlimited access to the web tools</li>
+            <li class="bullet-item">Contact <a href="mailto:info@insityou.uk ">info@insityou.uk </a> for prices.</li>
+          </ul>
         </div>
       </div>
     </div>
 
+    <div id="mission-3" class="intro-container scrollme">
+      <h1 class="animateme"
+        data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">InSitYou revolutionises how we work in the physical realm by putting the right people, in the right place at the right time.</h1> 
+    </div>
+
+    <div class="row team padding-top padding-bottom founders">
+      <h2 class="padding-bottom">Founders</h2>
+     
+      <div class="medium-2 small-8 small-offset-2 medium-offset-0 columns">
+        <img src="img/Bruce Davison.png">
+        <h3 class="show-for-small-up hide-for-medium-up">Bruce Davison <span>CEO</span></h3>
+      </div>
+      <div class="medium-4 small-8 columns">
+        <h3 class="show-for-medium-up">Bruce Davison <span>CEO</span></h3>
+        <p class="show-for-medium-up">Managed and led several architecture and design practices over the past 15 years. Most recently was a board director at a London based 60-person strong practice. Worked closely with the key decision makers at multiple Fortune 500 companies to help them shape their strategic HQ briefs.  Designed corporate HQ space for BSkyB and GoldmanSachs among others.</p>
+      </div>
+      <div class="medium-2 small-8 small-offset-2 medium-offset-0 columns">
+        <img src="img/Elizabeth Tweedale.png">
+        <h3 class="show-for-small-up hide-for-medium-up">Elizabeth Tweedale<span>CTO</span></h3>
+      </div>
+      <div class="medium-4 small-8  columns">
+        <h3 class="show-for-medium-up">Elizabeth Tweedale<span>CTO</span></h3>
+        <p class="show-for-medium-up">Computer scientist, architectural designer and strategic software consultant to the world’s leading architectural practices including Fosters and Partners. Used the beta version of InSitYou to consult on the new Apple Campus in Cupertino as well as on with several other high profile corporate HQ projects throughout the world</p>
+      </div>
+    </div>
+    <div class="row team padding-top padding-bottom team-pad">   
+      <h2 class="padding-bottom">Our Team</h2>
+      <div class="medium-3 small-6 columns person">
+        <img src="img/Julian Osman.png">
+        <h4>Julian Osman</h4>
+        <p>Senior Software Engineer</p>
+      </div>
+      <div class="medium-3 small-6 columns person">
+        <img src="img/Anthony Dervish-1.png">
+        <h4>Anthony Dervish</h4>
+        <p>Senior Software Engineer</p>
+      </div>
+
+      <div class="medium-3 small-6 columns person">
+        <img src="img/Diana Ionel.png">
+        <h4>Diana Ionel</h4>
+        <p>Database Specialist</p>
+      </div>
+
+      <div class="medium-3 small-6 columns person">
+        <img src="img/Marina Kuchak.png">
+        <h4>Marina Kuchak</h4>
+        <p>Office Manager</p>
+      </div>
+    </div>
+
+    <footer class="scrollme">
+      <div class="row footer-link-1">
+        <div class="small-12 columns links link-layer-1">
+          <div class="medium-2 columns links">
+            <a href="">info@insityou.uk</a>
+          </div>
+          <div class="medium-2 columns links">
+            <p>(+44) 7538 533 517</p>
+          </div>
+          <div class="medium-4 columns links">
+            <p>10 Clarendon Cross London UK W11 4AP</p>
+          </div>
+          <div class="medium-4 columns links">
+            <p>UK Company Registration: 09096842</p>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-link-2">
+        <div class="medium-6 columns links" style="">
+          <div class="large-4 columns links">
+            <a href="INSITYOU_FAQ.pdf" target="_blank">FAQ</a>
+          </div>
+          <div class="large-4 columns links">
+        
+            <a href="#" data-reveal-id="myModal2">Cookies</a>
+
+            <div id="myModal2" class="reveal-modal cookie" data-reveal>
+              <h2>How InSitYou uses Cookies</h2>
+            
+              <p>We may collect information about your computer, including where available your IP address, operating system and browser type. This information is statistical data about users' browsing actions and patterns, does not identify any individual. It is used to inform improvements to the website, for system administration, and to report aggregate information to third parties.For the same reasons, we may obtain information about your general internet usage by using a cookie file which is stored on the hard drive of your computer. We use this information to track your movements through the website, to find out how the website is being used and to assess its usefulness. Personal information about you is not collected during the tracking process.</p>
+
+              <p>We use a third party product "Google Analytics", a web analytics service provided by Google, Inc. ("Google"), to help us analyse how our website is used. In doing so information about your use of our website, including your IP address, may be transmitted to, and stored by, Google. This information will be subject to Google's Privacy Policy.
+              Google Analytics uses cookies to define user sessions, as well as to provide a number of key features in the Google Analytics reports. Google Analytics sets or updates cookies only to collect data required for the reports. Additionally, Google Analytics uses only first-party cookies. This means that all cookies set by Google Analytics for our website send data only to the servers for our website. This effectively makes Google Analytics cookies the personal property of our website, and the data cannot be altered or retrieved by any service on another website or domain.
+              We may use persistent cookies if you have registered with us on-line. These cookies allow us to make the logging-in process easier and more secure. They will also be used to recognise you when you return to the website. We may also use session cookies that will hold your data on our site until such time as you logout.
+              Session cookies are also used as part of the process of delivering the website to you, and do not store any personal information, and are deleted when you leave the site.</p>
+
+              <p> You may refuse to accept cookies by activating the setting on your browser which allows you to refuse the setting of cookies. However, if you select this setting you may be unable to access certain parts of the website. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you log on to our website.</p>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+          </div>
+          <div class="large-4  columns links">
+            <a href="INSITYOU - 201502.pdf" target="_blank">How we work with you</a>
+          </div>
+        </div>
+        <div class="medium-6 small-12 columns links">
+            <p class="right show-for-medium-up">© Copyright Insitu Software Limited 2015</p>
+            <p class="center show-for-small-only">© Copyright Insitu Software Limited 2015</p>
+        </div>
+    </footer>
+    
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> <!-- CUSTOM JS-->
+    <script src="js/jquery.scrollme.min.js"></script> <!-- SCROLL ANIMATIONS-->
+    <script src="js/rem.min.js" type="text/javascript"></script> <!-- POLYFILL FOR USING REM'S WITH IE8-->
+
+    <!-- DEACTIVATE SCROLL ANIMATIONS ON TOUCH -->
+
+    <script>
+     if (Modernizr.touch) {   
+          scrollme.init_if = function() { return(false);}  
+      } else {   
+          scrollme.init_if = function() { return(true);} 
+      } 
+    </script>
   </body>
 </html>
