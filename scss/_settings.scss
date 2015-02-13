@@ -275,6 +275,10 @@ footer {
 	a {
 		color: $purple;
 	}
+	a:active {
+		color: $purple;
+	}
+
 }
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
