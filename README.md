@@ -1,6 +1,6 @@
-# Foundation Compass Template
+# Insityou Front End Website
 
-The easiest way to get started with Foundation + Compass.
+It uses a ruby install of Foundation 5. 
 
 ## Requirements
 
